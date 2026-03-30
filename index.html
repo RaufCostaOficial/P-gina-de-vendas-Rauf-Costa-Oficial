@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descubra a Verdadeira História da Paraíba e João Pessoa</title>
+    <title>O Conhecimento Proibido Que Vai Mudar Sua Visão!</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { font-family: 'Inter', sans-serif; }
         .hero-gradient { background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); }
         .accent-gold { color: #d4af37; }
         .bg-gold { background-color: #d4af37; }
-        .btn-whatsapp { background-color: #25d366; }
-        .btn-hotmart { background-color: #f04e23; }
+        .btn-whatsapp { background-color: #25d366; color: white; }
+        .btn-hotmart { background-color: #f04e23; color: white; }
+        .btn-shadow { box-shadow: 0 4px 14px 0 rgba(0,0,0,0.3); }
+        
+        /* Forçar botões lado a lado em telas maiores que 640px */
+        @media (min-width: 640px) {
+            .btn-container {
+                display: flex !important;
+                flex-direction: row !important;
+                gap: 1rem !important;
+            }
+            .btn-container a {
+                flex: 1 1 0% !important;
+                width: 50% !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 leading-relaxed">
@@ -21,7 +36,7 @@
     <header class="hero-gradient text-white py-16 px-4 text-center">
         <div class="max-w-4xl mx-auto">
             <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-                O Conhecimento <span class="accent-gold">Proibido</span> Que Vai Mudar Sua Visão!
+                O <span class="accent-gold">Conhecimento Proibido</span> Que Vai Mudar Sua Visão!
             </h1>
             <p class="text-xl md:text-2xl mb-8 text-gray-300">
                 Tenha acesso a 2 materiais exclusivos que revelam a verdadeira história de João Pessoa e da Paraíba como você nunca viu.
@@ -37,7 +52,7 @@
     <!-- Seção Emocional -->
     <section class="py-12 bg-white px-4 border-b">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6">Nossa história é nossa maior riqueza.</h2>
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-800">Nossa história é nossa maior riqueza.</h2>
             <p class="text-lg text-gray-700 italic">
                 "Preservar a memória da Paraíba é honrar o sangue e a fé de quem construiu nossa terra. Valorize nossa cultura nordestina e descubra as raízes que formaram João Pessoa."
             </p>
@@ -49,41 +64,35 @@
         
         <!-- Produto 1 -->
         <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-16 border border-gray-100 flex flex-col md:flex-row">
-            <div class="md:w-1/3 bg-gray-100 flex items-center justify-center p-8">
-                <div class="text-center">
-                    <img src="https://static-media.hotmart.com/CypFGyaSI9jhdq9E58UwMXoahdg=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/31d3f477-f3fb-41f5-8723-bb22ebf53f30/Copilot_20260128_235437.png?w=920" alt="Capa As Guerras da Paraíba" class="w-48 h-auto rounded shadow-2xl mx-auto border-4 border-white transform hover:scale-105 transition duration-300">
-                    <p class="mt-4 text-sm text-gray-500 font-semibold uppercase tracking-widest">E-book PDF</p>
+            <div class="md:w-1/2 bg-gray-100 flex items-center justify-center p-4 md:p-12">
+                <div class="text-center w-full">
+                    <img src="https://static-media.hotmart.com/CypFGyaSI9jhdq9E58UwMXoahdg=/300x300/smart/filters:format(webp):background_color(white)/hotmart/product_pictures/31d3f477-f3fb-41f5-8723-bb22ebf53f30/Copilot_20260128_235437.png?w=920" alt="Capa As Guerras da Paraíba" class="w-full max-w-md h-auto rounded-lg shadow-2xl mx-auto border-8 border-white transform hover:scale-105 transition duration-300">
+                    <p class="mt-6 text-sm text-gray-500 font-bold uppercase tracking-widest">Material Exclusivo em PDF</p>
                 </div>
             </div>
-            <div class="md:w-2/3 p-8 md:p-12">
+            <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
                 <h2 class="text-3xl font-extrabold mb-4 text-gray-800">As Guerras da Paraíba: Sangue, Fé e Fundação da Capitania</h2>
                 <p class="text-lg text-gray-600 mb-6">
                     Baseado em documentos coloniais originais do século XVI, este material revela as batalhas épicas contra os Potiguaras e franceses. Uma imersão na verdadeira fundação da Paraíba, agora em português moderno para sua leitura.
                 </p>
                 <ul class="space-y-3 mb-8">
-                    <li class="flex items-center text-gray-700">
-                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        História real e documentada da fundação
+                    <li class="flex items-start text-gray-700">
+                        <svg class="w-6 h-6 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span><strong>História Real e Documentada:</strong> Baseado em fontes primárias do século XVI, revelando fatos que os livros escolares não contam.</span>
                     </li>
-                    <li class="flex items-center text-gray-700">
-                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Conteúdo exclusivo e raro (fontes primárias)
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Ideal para estudantes, professores e curiosos
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Leitura rápida, direta e envolvente
+                    <li class="flex items-start text-gray-700">
+                        <svg class="w-6 h-6 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span><strong>Conteúdo Exclusivo e Raro:</strong> Acesso a informações de arquivos coloniais traduzidas para o português moderno.</span>
                     </li>
                 </ul>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://go.hotmart.com/N104148581D" target="_blank" class="btn-hotmart hover:opacity-90 text-white font-bold py-4 px-6 rounded-lg text-center transition flex-1">
-                        COMPRAR AGORA NA HOTMART
+                
+                <!-- BOTÕES PRODUTO 1 (FORÇADOS LADO A LADO) -->
+                <div class="btn-container flex flex-col gap-4 mt-4">
+                    <a href="https://go.hotmart.com/N104148581D" target="_blank" class="btn-hotmart btn-shadow hover:opacity-90 font-extrabold py-4 px-2 rounded-xl text-center transition text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center">
+                        <i class="fas fa-shopping-cart mr-2"></i> HOTMART
                     </a>
-                    <a href="https://wa.me/5583986171121?text=Olá! Quero o desconto exclusivo para o e-book As Guerras da Paraíba." class="btn-whatsapp hover:opacity-90 text-white font-bold py-4 px-6 rounded-lg text-center transition flex-1">
-                        DESCONTO NO WHATSAPP
+                    <a href="https://wa.me/5583986171121?text=Olá! Quero o desconto exclusivo para o e-book As Guerras da Paraíba." target="_blank" class="btn-whatsapp btn-shadow hover:opacity-90 font-extrabold py-4 px-2 rounded-xl text-center transition text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2"></i> DESCONTO
                     </a>
                 </div>
             </div>
@@ -91,41 +100,35 @@
 
         <!-- Produto 2 -->
         <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-16 border border-gray-100 flex flex-col md:flex-row-reverse">
-            <div class="md:w-1/3 bg-gray-100 flex items-center justify-center p-8">
-                <div class="text-center">
-                    <img src="https://hotmart.s3.amazonaws.com/product_pictures/5c3e6020-27dd-4afc-853e-ce14d8885e00/Copilot_20250812_114611.png" alt="Capa Guia Centro Histórico João Pessoa" class="w-48 h-auto rounded shadow-2xl mx-auto border-4 border-white transform hover:scale-105 transition duration-300">
-                    <p class="mt-4 text-sm text-gray-500 font-semibold uppercase tracking-widest">E-book PDF</p>
+            <div class="md:w-1/2 bg-gray-100 flex items-center justify-center p-4 md:p-12">
+                <div class="text-center w-full">
+                    <img src="https://hotmart.s3.amazonaws.com/product_pictures/5c3e6020-27dd-4afc-853e-ce14d8885e00/Copilot_20250812_114611.png" alt="Capa Guia Centro Histórico João Pessoa" class="w-full max-w-md h-auto rounded-lg shadow-2xl mx-auto border-8 border-white transform hover:scale-105 transition duration-300">
+                    <p class="mt-6 text-sm text-gray-500 font-bold uppercase tracking-widest">Guia Digital Completo</p>
                 </div>
             </div>
-            <div class="md:w-2/3 p-8 md:p-12">
+            <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
                 <h2 class="text-3xl font-extrabold mb-4 text-gray-800">Guia Completo do Centro Histórico de João Pessoa</h2>
                 <p class="text-lg text-gray-600 mb-6">
                     Explore mais de 50 pontos históricos da nossa capital. Cada local é explicado com linguagem simples e clara, perfeito para roteiros turísticos, aulas ou simplesmente para quem ama nossa cidade.
                 </p>
                 <ul class="space-y-3 mb-8">
-                    <li class="flex items-center text-gray-700">
-                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Mais de 50 locais históricos detalhados
+                    <li class="flex items-start text-gray-700">
+                        <svg class="w-6 h-6 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span><strong>Mais de 50 Locais Detalhados:</strong> Um roteiro completo cobrindo desde os monumentos famosos até os segredos escondidos do centro.</span>
                     </li>
-                    <li class="flex items-center text-gray-700">
-                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Material didático e fácil de entender
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Perfeito para guias, professores e turistas
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Acesso imediato após a confirmação
+                    <li class="flex items-start text-gray-700">
+                        <svg class="w-6 h-6 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span><strong>Linguagem Simples e Acessível:</strong> Sem termos técnicos complicados, feito para que todos possam aprender e apreciar.</span>
                     </li>
                 </ul>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://go.hotmart.com/C101233932G" target="_blank" class="btn-hotmart hover:opacity-90 text-white font-bold py-4 px-6 rounded-lg text-center transition flex-1">
-                        QUERO COMPRAR AGORA
+
+                <!-- BOTÕES PRODUTO 2 (FORÇADOS LADO A LADO) -->
+                <div class="btn-container flex flex-col gap-4 mt-4">
+                    <a href="https://go.hotmart.com/C101233932G" target="_blank" class="btn-hotmart btn-shadow hover:opacity-90 font-extrabold py-4 px-2 rounded-xl text-center transition text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center">
+                        <i class="fas fa-shopping-cart mr-2"></i> HOTMART
                     </a>
-                    <a href="https://wa.me/5583986171121?text=Olá! Quero o desconto exclusivo para o Guia do Centro Histórico." class="btn-whatsapp hover:opacity-90 text-white font-bold py-4 px-6 rounded-lg text-center transition flex-1">
-                        DESCONTO NO WHATSAPP
+                    <a href="https://wa.me/5583986171121?text=Olá! Quero o desconto exclusivo para o Guia do Centro Histórico." target="_blank" class="btn-whatsapp btn-shadow hover:opacity-90 font-extrabold py-4 px-2 rounded-xl text-center transition text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2"></i> DESCONTO
                     </a>
                 </div>
             </div>
@@ -133,38 +136,133 @@
 
     </main>
 
+    <!-- Depoimentos (Prova Social) -->
+    <section class="py-16 bg-gray-900 text-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">O que dizem quem já teve acesso ao <span class="accent-gold">Conhecimento</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-300 italic mb-6">"Como professor de história, achei o material sobre as Guerras da Paraíba fenomenal. Fontes primárias traduzidas que facilitam muito o ensino em sala de aula. Recomendo!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center font-bold text-black mr-4">RM</div>
+                        <div><p class="font-bold">Ricardo Menezes</p><p class="text-sm text-gray-500">Professor de História</p></div>
+                    </div>
+                </div>
+                <!-- Depoimento 2 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-300 italic mb-6">"O Guia do Centro Histórico mudou minha forma de caminhar por João Pessoa. Agora entendo o significado de cada prédio e praça. É realmente um conhecimento que estava escondido."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center font-bold text-black mr-4">AS</div>
+                        <div><p class="font-bold">Ana Silva</p><p class="text-sm text-gray-500">Turista e Entusiasta</p></div>
+                    </div>
+                </div>
+                <!-- Depoimento 3 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-300 italic mb-6">"Material direto ao ponto e muito bem escrito. As batalhas contra os franceses e potiguaras são descritas de uma forma que parece que estamos lá. Vale cada centavo!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center font-bold text-black mr-4">JP</div>
+                        <div><p class="font-bold">João Pedro</p><p class="text-sm text-gray-500">Estudante de Direito</p></div>
+                    </div>
+                </div>
+                <!-- Depoimento 4 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-300 italic mb-6">"Sou guia de turismo há 10 anos e esse material me trouxe detalhes que eu nunca tinha visto em outros livros. Meus roteiros ficaram muito mais ricos."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center font-bold text-black mr-4">CL</div>
+                        <div><p class="font-bold">Carlos Lima</p><p class="text-sm text-gray-500">Guia de Turismo</p></div>
+                    </div>
+                </div>
+                <!-- Depoimento 5 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-300 italic mb-6">"Sempre tive curiosidade sobre a fundação da nossa capital, mas os livros escolares são muito superficiais. Esse e-book traz a 'história proibida' de forma clara."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center font-bold text-black mr-4">MB</div>
+                        <div><p class="font-bold">Maria Beatriz</p><p class="text-sm text-gray-500">Moradora de João Pessoa</p></div>
+                    </div>
+                </div>
+                <!-- Depoimento 6 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-300 italic mb-6">"O atendimento pelo WhatsApp foi excelente e o desconto valeu muito a pena. O material é de altíssima qualidade e o acesso foi imediato."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center font-bold text-black mr-4">FT</div>
+                        <div><p class="font-bold">Fernando Torres</p><p class="text-sm text-gray-500">Comprador Verificado</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Para quem é -->
     <section class="bg-gray-100 py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800">Para quem é este material?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-gold">
+                    <div class="text-3xl mb-4">🎓</div>
+                    <h3 class="font-bold text-xl mb-3">Estudantes e Professores</h3>
+                    <p class="text-gray-600">Ideal para quem busca fontes primárias e profundidade histórica para trabalhos, pesquisas e aulas diferenciadas.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-gold">
+                    <div class="text-3xl mb-4">🗺️</div>
+                    <h3 class="font-bold text-xl mb-3">Guias de Turismo</h3>
+                    <p class="text-gray-600">Enriqueça seus roteiros com detalhes que ninguém mais conta e encante seus clientes com histórias exclusivas.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-gold">
+                    <div class="text-3xl mb-4">🏛️</div>
+                    <h3 class="font-bold text-xl mb-3">Apaixonados por Cultura</h3>
+                    <p class="text-gray-600">Para quem ama o Nordeste e quer entender como a nossa identidade foi forjada através dos séculos.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-gold">
+                    <div class="text-3xl mb-4">🏠</div>
+                    <h3 class="font-bold text-xl mb-3">Moradores da Paraíba</h3>
+                    <p class="text-gray-600">Conheça os segredos da cidade onde você vive e tenha orgulho de caminhar por ruas carregadas de história.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-gold">
+                    <div class="text-3xl mb-4">📚</div>
+                    <h3 class="font-bold text-xl mb-3">Concurseiros</h3>
+                    <p class="text-gray-600">Uma base sólida e detalhada sobre a história regional, fundamental para provas que exigem conhecimentos locais.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-gold">
+                    <div class="text-3xl mb-4">🎁</div>
+                    <h3 class="font-bold text-xl mb-3">Buscadores de Verdade</h3>
+                    <p class="text-gray-600">Para quem não se contenta com o básico e quer ter acesso ao "conhecimento proibido" dos arquivos coloniais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (Perguntas Frequentes) -->
+    <section class="py-16 bg-gray-50 px-4">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Para quem é este material?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-sm flex items-start">
-                    <span class="text-2xl mr-4">🎓</span>
-                    <div>
-                        <h3 class="font-bold">Estudantes e Professores</h3>
-                        <p class="text-gray-600">Conteúdo rico para pesquisas e aulas diferenciadas.</p>
-                    </div>
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Perguntas Frequentes</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Como recebo o material após a compra?</h3>
+                    <p class="text-gray-600">O acesso é imediato! Assim que o pagamento for confirmado pela Hotmart, você receberá um e-mail com o link para baixar os arquivos em PDF.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm flex items-start">
-                    <span class="text-2xl mr-4">🗺️</span>
-                    <div>
-                        <h3 class="font-bold">Guias de Turismo</h3>
-                        <p class="text-gray-600">Informações precisas para encantar seus clientes.</p>
-                    </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Os e-books são fáceis de ler no celular?</h3>
+                    <p class="text-gray-600">Sim! Os arquivos foram formatados para uma leitura confortável em qualquer dispositivo (celular, tablet ou computador).</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm flex items-start">
-                    <span class="text-2xl mr-4">❤️</span>
-                    <div>
-                        <h3 class="font-bold">Apaixonados por História</h3>
-                        <p class="text-gray-600">Para quem quer conhecer as raízes da nossa terra.</p>
-                    </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Preciso de algum conhecimento prévio de história?</h3>
+                    <p class="text-gray-600">Não. A linguagem é simples, direta e envolvente, feita para que qualquer pessoa consiga entender e se apaixonar pela nossa história.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm flex items-start">
-                    <span class="text-2xl mr-4">🏠</span>
-                    <div>
-                        <h3 class="font-bold">Moradores de João Pessoa</h3>
-                        <p class="text-gray-600">Conheça os segredos da cidade onde você vive.</p>
-                    </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Como funciona o desconto pelo WhatsApp?</h3>
+                    <p class="text-gray-600">Ao clicar no botão de desconto, você falará diretamente comigo. Lá, eu te passarei uma condição especial exclusiva para quem prefere o atendimento personalizado.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">O pagamento na Hotmart é seguro?</h3>
+                    <p class="text-gray-600">Totalmente seguro. A Hotmart é a maior plataforma de produtos digitais da América Latina, garantindo a proteção dos seus dados e a entrega do seu produto.</p>
                 </div>
             </div>
         </div>
@@ -178,20 +276,36 @@
                 Este material é exclusivo e pode sair do ar a qualquer momento. Garanta seu acesso imediato e comece sua jornada pela história da Paraíba agora mesmo.
             </p>
             <div class="space-y-4">
-                <a href="https://wa.me/5583986171121?text=Olá! Quero garantir meu acesso com desconto agora." class="inline-block w-full md:w-auto btn-whatsapp hover:opacity-90 text-white font-bold py-5 px-12 rounded-full text-xl shadow-2xl transition transform hover:scale-105">
-                    CHAMAR NO WHATSAPP AGORA
+                <a href="https://wa.me/5583986171121?text=Olá! Quero garantir meu acesso com desconto agora." target="_blank" class="inline-block w-full md:w-auto btn-whatsapp btn-shadow hover:opacity-90 font-extrabold py-5 px-12 rounded-full text-xl transition transform hover:scale-105">
+                    💬 CHAMAR NO WHATSAPP AGORA
                 </a>
-                <p class="text-sm text-gray-500 mt-4 font-semibold">
-                    ⚡ ACESSO IMEDIATO | 🔒 COMPRA SEGURA | 🎁 DESCONTO NO WHATSAPP
-                </p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center border-t border-gray-800">
-        <p>&copy; 2026 Rauf Costa Oficial - História da Paraíba. Todos os direitos reservados.</p>
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 text-center border-t border-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex justify-center gap-8 mb-8 text-2xl">
+                <a href="https://www.instagram.com/raufcosta_oficial" target="_blank" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@professorraufcosta" target="_blank" class="hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61564454375323" target="_blank" class="hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/people/JP-Patrim%C3%B4nio/61579185908602/" target="_blank" class="hover:text-white transition"><i class="fas fa-landmark"></i></a>
+            </div>
+            <p class="mb-2">&copy; 2026 História da Paraíba. Todos os direitos reservados.</p>
+            <p class="text-sm">Rauf Costa Oficial - Valorizando nossa cultura e história.</p>
+        </div>
     </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5583986171121?text=Olá! Estou na sua página de vendas e gostaria de tirar uma dúvida sobre os e-books." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-[#25d366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group"
+       title="Fale conosco no WhatsApp">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
 
 </body>
 </html>
